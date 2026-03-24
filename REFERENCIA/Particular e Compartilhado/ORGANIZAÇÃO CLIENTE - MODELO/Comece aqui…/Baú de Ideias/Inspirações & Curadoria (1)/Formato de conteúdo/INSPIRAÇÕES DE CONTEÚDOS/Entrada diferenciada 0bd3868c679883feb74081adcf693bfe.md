@@ -1,3 +1,0 @@
-# Entrada diferenciada
-
-Formato: Carrossel

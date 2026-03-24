@@ -1,3 +1,0 @@
-# Referências de designer
-
-[INSPIRAÇÕES DE DESIGNS](Refer%C3%AAncias%20de%20designer/INSPIRA%C3%87%C3%95ES%20DE%20DESIGNS%202de3868c67988268888601f9094bb503.csv)

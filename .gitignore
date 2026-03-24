@@ -1,0 +1,22 @@
+# Dependências do projeto
+nea-marketing-hub/node_modules/
+
+# Build
+nea-marketing-hub/dist/
+nea-marketing-hub/dist-ssr/
+
+# Variáveis de ambiente — NUNCA commitar
+nea-marketing-hub/.env
+nea-marketing-hub/.env.local
+nea-marketing-hub/.env.*.local
+
+# TypeScript build info
+nea-marketing-hub/*.tsbuildinfo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fundo e texto base — tema claro */
+    --background: 40 33% 95%;        /* #F5F0E8 — bege muito claro */
+    --foreground: 0 0% 13%;          /* #212121 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    /* Primária: verde escuro #4F6F4A */
+    --primary: 112 16% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secundária: verde claro #8DAA4D */
+    --secondary: 82 33% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 40 20% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent: laranja #F28C38 */
+    --accent: 30 87% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 20% 85%;
+    --input: 40 20% 88%;
+    --ring: 112 16% 36%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 112 16% 24%;   /* verde bem escuro */
+    --sidebar-foreground: 40 33% 92%;
+    --sidebar-primary: 30 87% 58%;       /* laranja para item ativo */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 112 16% 32%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 112 16% 20%;
+    --sidebar-ring: 30 87% 58%;
+  }
+
+  .dark {
+    --background: 220 13% 10%;
+    --foreground: 40 20% 92%;
+
+    --card: 220 13% 14%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 220 13% 14%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 112 16% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 82 33% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 13% 20%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 30 87% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 20%;
+    --input: 220 13% 18%;
+    --ring: 112 16% 48%;
+
+    --sidebar-background: 220 15% 8%;
+    --sidebar-foreground: 40 20% 88%;
+    --sidebar-primary: 30 87% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 13% 14%;
+    --sidebar-accent-foreground: 40 20% 88%;
+    --sidebar-border: 220 13% 12%;
+    --sidebar-ring: 30 87% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+/* Scrollbar customizada */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--border));
+    border-radius: 3px;
+  }
+}
